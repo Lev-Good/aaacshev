@@ -196,8 +196,15 @@
     <section id="register" class="scroll-mt-6 px-5 py-16">
         <div class="mx-auto max-w-xl">
             <h2 class="text-center text-4xl sm:text-5xl font-extrabold text-brand-blue">שריינו את המקום שלכם</h2>
-            <div class="mt-8">
-                <form class="space-y-5 rounded-3xl bg-white p-6 shadow-card sm:p-10" onsubmit="event.preventDefault(); alert('הטופס נשלח בהצלחה!');">
+            
+            <!-- Test Mode Notice Box -->
+            <div class="mt-6 mb-4 rounded-2xl bg-amber-50 border border-amber-300 p-4 text-center text-amber-900 shadow-sm">
+                <p class="font-bold">⚠️ הודעת מערכת: עמוד זה הינו עמוד בדיקה בלבד!</p>
+                <p class="text-sm mt-1">ההרשמה כאן אינה נקלטת בפועל. נא המתינו לפרסומים והקישורים הרשמיים.</p>
+            </div>
+
+            <div class="mt-4">
+                <form class="space-y-5 rounded-3xl bg-white p-6 shadow-card sm:p-10" onsubmit="event.preventDefault(); alert('זוהי סביבת בדיקה! ההרשמה לא נקלטה בפועל. נא המתינו לפרסומים הרשמיים.');">
                     <div>
                         <label class="block text-sm font-bold text-brand-clay mb-2">שם מלא</label>
                         <input type="text" required placeholder="הכנס את שמך" class="w-full rounded-xl border border-slate-300 p-3 outline-none focus:border-brand-blue">
